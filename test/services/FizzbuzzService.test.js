@@ -1,10 +1,10 @@
-const FizzbuzzService= require ("./../../lib/services/FizzbuzzService")
+const FizzbuzzService= require ("./../../lib/services/FizzbuzzService");
 
 describe("Test para FizzbuzzService",() =>{
     test("Requerimiento 1: Enviar un explorer que tenga un score 1",()=>{
-            const explorers= {name: "Explorer1", score: 1, trick : 1};
-            const explorersScore =FizzbuzzService.applyValidationInExplorer(explorers);
-            expect(explorersScore.trick).toBe(1);
+        const explorers= {name: "Explorer1", score: 1, trick : 1};
+        const explorersScore =FizzbuzzService.applyValidationInExplorer(explorers);
+        expect(explorersScore.trick).toBe(1);
     });
 
     test("Requerimiento 2: Enviar un explorer que tenga un score 3, debe ser 'FIZZ' ",()=>{

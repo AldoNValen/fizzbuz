@@ -11,12 +11,12 @@ console.log(explorers)           */
 //se esta enviando un path a la clase , esta lo recibe , lo regresa con sus funciones, en este caso la de leer un json
 const Reader = require("./lib/utils/reader");
 const explorers = Reader.readJsonFile("explorers.json"); // esto regresa la lista de explorers del archivo
-console.log(explorers)
+console.log(explorers);
 
 
 // // Part 2: Get the quantity of explorers names in node
- // const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
- //console.log("explorar en node:" + explorersInNode.length) 
+// const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
+//console.log("explorar en node:" + explorersInNode.length) 
 
 // Part4: Get the explorer's usernames in Node
 /* const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
@@ -25,8 +25,8 @@ console.log(usernamesInNode) */
 
 //EXPLORER SERVICE
 // Aplicación del ExplorerService sobre la lista de explorers
-const ExplorerService= require("./lib/services/ExplorerService")
-console.log("lista filtrada***************************************************")
+const ExplorerService= require("./lib/services/ExplorerService");
+console.log("lista filtrada***************************************************");
 
 
 //explorers que estan en la mision "node"
@@ -39,19 +39,19 @@ console.log(ExplorerService.getAmountOfExplorersByMission(explorers, "node"));
 console.log(ExplorerService.getExplorersUsernamesByMission(explorers, "node"));
 
 
-const FizzbuzzService= require("./lib/services/FizzbuzzService")
+const FizzbuzzService= require("./lib/services/FizzbuzzService");
 
-const explorer1 = {name: "Explorer1", score: 1}
-console.log(FizzbuzzService.applyValidationInExplorer(explorer1)) // {name: "Explorer1", score: 1, trick: 1} 
+const explorer1 = {name: "Explorer1", score: 1};
+console.log(FizzbuzzService.applyValidationInExplorer(explorer1)); // {name: "Explorer1", score: 1, trick: 1} 
 
-const explorer3 = {name: "Explorer3", score: 3}
-console.log(FizzbuzzService.applyValidationInExplorer(explorer3)) // {name: "Explorer3", score: 3, trick: "FIZZ"}
+const explorer3 = {name: "Explorer3", score: 3};
+console.log(FizzbuzzService.applyValidationInExplorer(explorer3)); // {name: "Explorer3", score: 3, trick: "FIZZ"}
 
-const explorer5 = {name: "Explorer5", score: 5}
-console.log(FizzbuzzService.applyValidationInExplorer(explorer5)) // {name: "Explorer5", score: 5, trick: "BUZZ"}
+const explorer5 = {name: "Explorer5", score: 5};
+console.log(FizzbuzzService.applyValidationInExplorer(explorer5)); // {name: "Explorer5", score: 5, trick: "BUZZ"}
 
-const explorer15 = {name: "Explorer15", score: 15}
-console.log(FizzbuzzService.applyValidationInExplorer(explorer15)) // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
+const explorer15 = {name: "Explorer15", score: 15};
+console.log(FizzbuzzService.applyValidationInExplorer(explorer15)); // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
 // Part 8: Get a list of the explorers in node, 
 /* if the score is divisible by 5 and 3, set the property trick and the value FIZZBUZZ, 
 if is just divisible by 5 set the property trcik and the value BUZZ, 
