@@ -24,6 +24,6 @@
   "homepage": "https://github.com/AldoNValen/fizzbuz#readme",
   "devDependencies": {
     "eslint": "^8.14.0",
-    "jest": "^28.0.2"
+    "jest": "26.0.1"
   }
 }
