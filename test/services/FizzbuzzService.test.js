@@ -24,4 +24,10 @@ describe("Test para FizzbuzzService",() =>{
         const explorersScore =FizzbuzzService.applyValidationInExplorer(explorers);
         expect(explorersScore.trick).toBe("FIZZBUZZ");
     });
+
+    test("Requerimiento nuevo: Enviar un explorer que tenga un score 5, debe ser 'FIZZBUZZ' ",()=>{
+        const number= 5;
+        const explorersScore =FizzbuzzService.applyValidationInNumber(number);
+        expect(explorersScore).toBe("BUZZ");
+    });
 });
